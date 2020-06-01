@@ -2,20 +2,21 @@
   "name": "note-taker",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "author": "Lance Page",
   "license": "ISC",
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "mysql": "^2.16.0",
-    "webmanifest-cli": "^0.1.7"
+    "webmanifest-cli": "0.0.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "watch": "nodemon server.js"
   }
 }
