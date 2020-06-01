@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.use(compression());
 app.use("/api", apiRoutes);
-app.use("", htmlRoutes);
+app.use(htmlRoutes);
 
 
 // Start the server on the port
